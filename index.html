@@ -1,88 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damaged Rabbit</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f, #1a1a2e);
+            color: #e0e0e0;
             text-align: center;
         }
 
-        h1, h2, h3 {
-            margin: 10px 0;
+        .container {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 200, 255, 0.8);
         }
 
         h1 {
-            font-size: 2.5em;
-            color: #4A90E2;
+            font-size: 3em;
+            margin: 20px 0 10px;
+            color: #00aaff;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            opacity: 0.8;
+            color: #cccccc;
         }
 
         h2 {
             font-size: 2em;
-            color: #E94E77;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            color: #7D3C98;
+            margin-top: 40px;
+            color: #ff2277;
         }
 
         p {
             font-size: 1.2em;
-            line-height: 1.5;
-        }
-
-        .logo {
-            width: 109px;
-            height: 109px;
-            border-radius: 50%;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            line-height: 1.6;
+            opacity: 0.9;
         }
 
         .divider {
-            margin: 20px 0;
-            border-bottom: 2px solid #E94E77;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 60%;
+            height: 2px;
+            margin: 30px auto;
+            background: linear-gradient(90deg, transparent, #ff2277, transparent);
         }
 
         a {
-            color: #4A90E2;
+            color: #00ddff;
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
         }
+
+        .banner {
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 35, 105, 0.5);
+            transition: 0.3s ease;
+        }
+
+        .banner:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px rgba(255, 35, 105, 0.8);
+        }
     </style>
 </head>
 <body>
-<div>
-    <h1>
-        <strong>
-            <img class="logo" src="https://m.gjcdn.net/user-avatar/200/5606253-crop63_0_1532_1469-ll-kpgwqhir-v4.webp" alt="Damaged Rabbit Logo"/>
-        </strong>
-    </h1>
-    <h1><strong>Damaged Rabbit</strong></h1>
-    <h3>A duo of developers who create games with soul and real high quality</h3>
+    <div class="container">
+        <img class="logo" src="https://m.gjcdn.net/user-avatar/200/5606253-crop63_0_1532_1469-ll-kpgwqhir-v4.webp" alt="Damaged Rabbit Logo" />
 
-    <div class="divider"></div>
+        <h1>Damaged Rabbit</h1>
+        <h3>A duo of developers creating atmospheric and high‑quality games</h3>
 
-    <h2><strong>NEON LIGHT</strong></h2>
-    <p>We are currently developing Neon Light, which is our debut project before moving on to something more significant.</p>
-    <img src="https://m.gjcdn.net/user-header/2000/5606253-vcanehmv-v4.webp" alt="Neon Light Banner" width="360" height="90"/>
+        <div class="divider"></div>
 
-    <div class="divider"></div>
+        <h2>NEON LIGHT</h2>
+        <p>We are currently developing Neon Light, which is our debut project before moving on to something more significant.</p>
+        <img class="banner" src="https://m.gjcdn.net/user-header/2000/5606253-vcanehmv-v4.webp" alt="Neon Light Banner" style="max-width: 360px; width: 100%; height: auto; border-radius: 12px;" />
 
-    <p>If you want more news, visit our Gamejolt: <a href="https://gamejolt.com/@DamagedRabbit" target="_blank">https://gamejolt.com/@DamagedRabbit</a></p>
-    <p>Email: <a href="mailto:damagedrabbitit@gmail.com">damagedrabbitit@gmail.com</a></p>
-</div>
+        <div class="divider"></div>
+
+        <p>If you want more news, visit our Gamejolt:</p>
+        <p><a href="https://gamejolt.com/@DamagedRabbit" target="_blank">https://gamejolt.com/@DamagedRabbit</a></p>
+
+        <p>Email: <a href="mailto:damagedrabbitit@gmail.com">damagedrabbitit@gmail.com</a></p>
+    </div>
 </body>
 </html>
